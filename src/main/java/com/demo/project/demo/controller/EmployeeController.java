@@ -41,7 +41,7 @@ public class EmployeeController {
 
     @PostMapping("/add")
     public DataResult<Employee> addProduct(@RequestBody Employee employee) {
-        return employeeService.addProduct(employee);
+        return employeeService.addEmployee(employee);
     }
 
     @DeleteMapping("/{id}")

@@ -16,7 +16,7 @@ public interface EmployeeService {
 
     void deleteProductById(Integer id);
 
-    DataResult<Employee> addProduct(Employee employee);
+    DataResult<Employee> addEmployee(Employee employee);
 
     Page<Employee> getAllRelatedEmployees(EmployeeQuery query);
 

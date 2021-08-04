@@ -37,7 +37,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public DataResult<Employee> addProduct(Employee employee) {
+    public DataResult<Employee> addEmployee(Employee employee) {
         return new SuccessDataResult<>(employeeRepository.save(employee), "The employee was added.");
     }
 
