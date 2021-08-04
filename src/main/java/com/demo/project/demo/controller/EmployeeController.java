@@ -55,7 +55,7 @@ public class EmployeeController {
         return employeeService.updateOfficeLocation(department, newOfficeLocation);
     }
 
-    @GetMapping("/random}")
+    @GetMapping("/random")
     public DataResult<Employee> getRandomEmployee() {
         return employeeService.getRandomEmployee();
     }
