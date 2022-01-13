@@ -26,6 +26,11 @@ public class EmployeeController {
         return employeeService.getAll();
     }
 
+    @RequestMapping(value = "/{text:[a-z-]+}.{number:[\\d]+}")
+    public String reg(@PathVariable String text, @PathVariable String number) {
+        return "got your";
+    }
+
     @GetMapping("/findAll")
     public PagedVoApiResponse<List<EmployeeDTO>> findAllAsFiltered(
             @RequestParam(defaultValue = "1", name = "pageNo") Integer pageNo,
